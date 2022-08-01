@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background: url('https://zupimages.net/up/22/30/1g7j.png');
+}
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+    background-color: black;
+}
+nav h1{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+header{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('https://zupimages.net/up/22/30/61v7.png');
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
+}
+header h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    color: #130c3a;
+    position: relative;
+    -webkit-text-stroke : 0.3vw #130c3a;
+    text-transform: uppercase;
+}
+header h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke : 0vw blue;
+    border-right: 2px solid white;
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+        0%,10%,100%
+    {
+        width: 0;
+    }
+    70%
+    {
+        width: 100%;
+    }
+}
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+header input{
+    padding: 10px 20px;
+    background-color: #fff;
+    color:#000;
+    border:none;
+    margin-bottom: 30px;
+    outline:none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+}
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:30px;
+    transition: 1s;
+}
+.card:hover{
+    transform: translateX(-50px);
+}
+.main .content .card .left{
+   flex: 0 0 30%;
+   padding: 25px;
+   background-color:black;
+   color:#fff;
+}
+
+.main .content .card .right img{
+    height:300px;
+    width: 400px;
+    margin-top: 5px;
+}
+#infos .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 20px; 
+    max-width: 1500px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+#infos .container .block {
+    text-align: center;
+    background: linear-gradient(120deg, rgba(2,0,36,1) 10%, rgba(21,11,78,1) 46%);
+    height: 450px;
+    width: 450px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0,2s;
+    margin: 30px 20px 0 20px ;
+}
+#infos .container .block:hover {
+    box-shadow: 0px 65px 90px -55px black;
+    transform: translateY(-10px);
+
+}
+#infos .container .block span.fa {
+    font-size: 100px;
+    color: white;
+}
+#infos .container .block h3{
+    font-size: 50px;
+    color: white;
+    margin: 30px 0px 15px 0px;
+}
+#infos .container .block p{
+    color: white;
+    margin: 20px;
+    margin-top: 30px;
+}
+footer{
+    margin-top: 0px;
+    border-top: 5px solid #6f6f6f;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 30px 100px;;
+}
+footer h1{
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid white;
+    width: 20%;
+    padding-bottom: 5px;
+    margin-left: 7%;
+
+}
+footer .services{
+    margin-top: -10px;
+    display:flex;
+    flex-wrap:wrap;
+    margin-left: 7% ;
+}
+
+footer .services .service{
+    margin-right: 40px;
+}
+footer .services .service p{
+    max-width: 250px;
+}
+footer #contact{
+    color: rgb(181, 181, 181);
+    margin-left: 7%;
+}
+
+#avis {
+    padding: 0px 10px 50px 10px;
+    border-top: 5px solid #6f6f6f;
+}
+#avis .container:nth-child(1) {
+    max-width: 100%;
+    margin: 0 auto;
+}
+#avis .containerr{
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 15px 35px -10px white;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+#avis .container h3{
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+
+#avis .container p{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding: -50px;
+}
+#avis .container h6{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+#avis .container .aviss{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    max-width: 600px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+#avis .container .aviss .bloc{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 15px 35px -10px white;
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0,2s;
+}
+#avis .containerr .personnes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+#avis .containerr p{
+    font-size: 15px;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 500;
+    color: #212121
+}
+#avis .containerr .personnes div:nth-child(1){
+    margin-right: 20px ;
+}
+#avis .containerr .personnes h5{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+#avis .container .aviss .bloc:hover,
+#avis .containerr:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    background-color: black;
+}
+#avis .container .aviss .bloc:hover h3,
+#avis .container .aviss .bloc:hover p,
+#avis .containerr:hover p1,
+#avis .containerr:hover h5,
+#avis .containerr:hover p{
+    color: white;
+}
+@media screen and (max-width: 550px){
+    #avis .container .aviss{
+        flex-direction: column;
+    }
+    #avis .container .aviss .bloc{
+        margin: 10px;
+    }
+    #avis .container > h3{
+        font-size: 25px;
+     }
+}
+@media screen and (max-width:680px){
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .card {
+        margin: 10px;
+    }
+    .main .content .card .right img{
+        height:200px;
+        width: 100%;
+        margin-top: -0px;
+    }
+    .main .content .card{
+        display: block;
+    }
+    footer{
+        padding: 30px;
+    }
+}
